@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form">
+        <form action="/submit-form" method="post" onsubmit="return validateForm()" >
+
+            <h2>Sign Up</h2>
+            
+            <!---NameInput-->
+            <div class="form-group">
+            <label for="name">Name <span class="required">*</span></label>
+            <input type="name" id = "name" name="name" required>
+            <br />
+        </div>
+            
+            <!----Surname Input-->
+            <div class="form-group">
+            <label for="surname">Surname <span class="required">*</span></label>
+            <input type="name" id="surname" name="surname" required>
+            <br />
+        </div>
+
+            <!---Occupation-->
+            <div class="form-group">
+            <label for="Occupation">Occupation <span class="required">*</span></label>
+            <input type="text" id="occupation" name="occupation" required>
+            <br />
+            </div>
+
+
+            <!----Phone-->
+            <div class="form-group">
+            <label for = "number">Phone Number <span class="required">*</span></label>
+            <input type="text" id="number" name="number" required>
+            <br />
+            </div>
+
+            <!----Email input-->
+            <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+            <br />
+            </div>
+    
+            <button type="submit" value="Submit"> Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
